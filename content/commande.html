@@ -9,10 +9,10 @@
 <body>
 
 <header>
-    <nav class="menu">
-        <div class="logo">
-            <h2>Candles</h2>
-        </div>
+<nav class="menu">
+ <div class="logo">
+    <h2>Candles</h2>
+</div>
         <ul class="liens">
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="produits.html">Nos bougies</a></li>
@@ -21,35 +21,36 @@
             <li><a href="commande.html">Commande</a></li>
             <li id="liensDeconnexion" style="display:none;"><a href="#" onclick="deconnecter()">Se déconnecter</a></li>
         </ul>
-        <div class="paniericone">
+<div class="paniericone">
             <a href="commande.html">Panier <span id="nbArticles">0</span></a>
-        </div>
+ </div>
     </nav>
 </header>
 
 <main>
-    <div class="titrepage">
-        <h1>Votre commande</h1>
-        <p>Récapitulatif et validation</p>
-    </div>
+<div class="titrepage">
+ <h1>Votre commande</h1>
+  <p>Récapitulatif et validation</p>
+</div>
 
     <div class="panier">
         <div class="paniervide" id="panierVide">
             <p>Votre panier est vide</p>
             <a href="produits.html" class="bouton">Voir nos bougies</a>
         </div>
-        <div id="contenuPanier" style="display:none;">
-            <div class="facture">
-                <h3>Facture</h3>
-                <table class="tablefacture">
-                    <thead>
-                        <tr>
-                            <th>Produit</th>
-                            <th>Prix unitaire</th>
-                            <th>Quantité</th>
-                            <th>Total</th>
-                            <th></th>
-                        </tr>
+<div id="contenuPanier" style="display:none;">
+           
+    <div class="facture">
+      <h3>Facture</h3>
+       <table class="tablefacture">
+            <thead>
+                <tr>
+                  <th>Produit</th>
+                     <th>Prix unitaire</th>
+                     <th>Quantité</th>
+                     <th>Total</th>
+                    <th></th>
+                </tr>
                     </thead>
                     <tbody id="listePanier">
                     </tbody>
@@ -62,28 +63,28 @@
                     </tfoot>
                 </table>
             </div>
-            <div class="validation">
-                <button class="btnvider" onclick="viderPanier()">Vider le panier</button>
-                <button class="bouton" onclick="validerCommande()">Valider ma commande</button>
-            </div>
-        </div>
+    <div class="validation">
+        <button class="btnvider" onclick="viderPanier()">Vider le panier</button>
+        <button class="bouton" onclick="validerCommande()">Valider ma commande</button>
+    </div>
+</div>
     </div>
 </main>
 
 <footer class="footer">
-    <div class="infos">
-        <p>Candles - Boutique de bougies</p>
-        <p><a href="#">Boutique@candles.dz</a> | <a href="#">📞 02123456789</a></p>
-        <p>Tizi-ouzou, Algérie</p>
+<div class="infos">
+    <p>Candles - Boutique de bougies</p>
+    <p><a href="#">Boutique@candles.dz</a> | <a href="#">📞 02123456789</a></p>
+    <p>Tizi-ouzou, Algérie</p>
     </div>
 </footer>
 
 <div id="messageconf" class="messageconf" style="display:none;">
-    <div class="messagecont">
-        <h2>Merci pour votre commande !</h2>
-        <p>Votre commande a été validée avec succès.</p>
-        <button class="bouton" onclick="fermerMessage()">Continuer</button>
-    </div>
+ <div class="messagecont">
+    <h2>Merci pour votre commande !</h2>
+    <p>Votre commande a été validée avec succès.</p>
+    <button class="bouton" onclick="fermerMessage()">Continuer</button>
+</div>
 </div>
 
 <script src="../javascript/commande.js"></script>
