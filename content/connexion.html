@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candles | Connexion</title>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <h2>Candles</h2>
+            </div>
+            <ul class="liens">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="produits.html">Nos bougies</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="commande.html">Commande</a></li>
+                <li id="liensDeconnexion" style="display:none;"><a href="#" onclick="deconnecter()">Se déconnecter</a></li>
+            </ul>
+            <div class="paniericone">
+                <a href="commande.html">Panier <span id="nbArticles">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titrepage">
+            <h1>Connexion</h1>
+            <p>Connectez-vous à votre compte</p>
+        </div>
+
+        <div class="formulaire">
+            <form id="formConnexion">
+                <div class="champ">
+                    <label>Email :</label>
+                    <input type="email" id="email" placeholder="Saisissez votre adresse mail">
+                    <small class="erreur" id="erreurEmail"></small>
+                </div>
+
+                <div class="champ">
+                    <label>Mot de passe :</label>
+                    <input type="password" id="mdp" placeholder="Saisissez votre mot de passe">
+                    <small class="erreur" id="erreurMdp"></small>
+                </div>
+
+                <button type="submit" class="bouton">Se connecter</button>
+            </form>
+            <p class="lienconnexion">Vous n'avez pas de compte ? <a href="inscription.html">Inscrivez-vous</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="infos">
+            <p> Candles - Boutique de bougies</p>
+            <p> <a href="#">Boutique@candles.dz</a> | <a href="#">📞 02123456789</a></p>
+            <p> Tizi-ouzou, Algérie</p>
+            
+        </div>
+    </footer>
+
+    <script src="../javascript/auth.js"></script>
+</body>
+</html>

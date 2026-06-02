@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candles | Accueil</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <h2>Candles</h2>
+            </div>
+            <ul class="liens">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="content/produits.html">Nos bougies</a></li>
+                <li><a href="content/inscription.html">Inscription</a></li>
+                <li><a href="content/connexion.html">Connexion</a></li>
+                <li><a href="content/commande.html">Commande</a></li>
+                <li id="liensDeconnexion" style="display:none;"><a href="#" onclick="deconnecter()">Se déconnecter</a></li>
+            </ul>
+            <div class="paniericone">
+                <a href="content/commande.html">Panier <span id="nbArticles">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Bienvenue chez Candles</h1>
+            <p>Des bougies pour vous illuminer </p>
+            <a href="content/produits.html" class="bouton">Découvrir nos bougies</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="infos">
+            <p> Candles - Boutique de bougies</p>
+            <p> <a href="#">Boutique@candles.dz</a> | <a href="#">📞 02123456789</a></p>
+            <p> Tizi-ouzou, Algérie</p>
+           
+        </div>
+    </footer>
+
+    <script src="javascript/produits.js" type="text/javascript"></script>
+    <script src="javascript/auth.js" type="text/javascript"></script>
+</body>
+</html>
